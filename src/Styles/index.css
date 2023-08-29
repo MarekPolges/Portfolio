@@ -1,0 +1,225 @@
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+  
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  margin: 0;
+  padding: 0; 
+  font-family: 'Raleway';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.footer {
+  background-color:rgb(149, 225, 211); 
+  font-size: small;
+  color: rgb(207, 102, 158); 
+  position: fixed;
+  bottom: 0; 
+  width: calc(100% - 2px);  
+  height: auto; 
+}
+
+
+.App {
+  position: absolute; 
+  top: 0; 
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 2px);
+  z-index: 0;
+  background: rgb(252, 227, 138)
+}
+
+.download-link  {
+  font-size: large;
+  color: rgb(243, 129, 129);
+  text-shadow: 1px 1x 1px rgb(79, 69, 69) ;
+}
+
+/*ABOUT PAGE STYLES*/
+
+/* this is gonna be mobile devices */
+@media (max-width: 799px ) {
+
+  .about-container {
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+   text-align: left;
+   padding: 15px; 
+   color: rgb(243, 129, 129); 
+   text-shadow: 1px 1px 1px black;
+  }
+
+   .photo-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    top: 100%; 
+    flex-direction: column;
+    padding: 20px; 
+    align-items: center; 
+    width: 100%; 
+    opacity: 0.85;
+  }
+
+  .photo-container img {
+    padding: 10px; 
+    border-radius: 10%; 
+    max-width: 100%;
+    height: auto; 
+  }
+
+  .profile-text-container {
+    padding: 20px; 
+    font-size: medium;
+    z-index: 1; 
+  }
+
+  .socials-icons {
+    display: flex;
+    position: absolute;
+    right: 15%; 
+    bottom: 5%; 
+    flex-direction: row;
+    width: 30%;
+    padding: 10px; 
+    max-width: 2vh;
+  }
+  
+  .LinkedInIcon {
+    margin-right: 10px; 
+  }
+  .GmailIcon {
+    margin-right: 14px; 
+  }
+}
+
+
+
+
+
+@media (min-width: 800px ) {
+
+
+  .about-container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 15px; 
+    color: rgb(243, 129, 129); 
+    text-shadow: 1px 1px 1px black;
+     }
+ 
+    .photo-container {
+      position: absolute;
+      left: -32%; 
+      top: 10%;
+     display: flex; 
+     flex-direction: column;
+     padding: 20px; 
+     align-items: center; 
+     width: 90%; 
+     opacity: 0.85;
+   }
+ 
+   .photo-container img {
+     padding: 10px; 
+     border-radius: 10%; 
+     max-width: 90%;
+     height: auto; 
+   
+     
+   }
+ 
+   .profile-text-container {
+    position: absolute; 
+      right: 0%; 
+      text-align: left;
+      
+     padding: 30px; 
+     font-size: medium;
+     width: 45%; 
+     top:10%; 
+     z-index: 0; 
+   }
+   .profile-text-container h3 {
+    font-size: x-large;
+    
+   }
+ 
+   .socials-icons {
+    display: flex;
+    position: absolute;
+    right: 15%; 
+    bottom: 5%; 
+    flex-direction: row;
+    width: 30%;
+    padding: 10px; 
+    max-width: 2vh;
+  }
+  
+  .LinkedInIcon {
+    margin-right: 10px; 
+  }
+  .GmailIcon {
+    margin-right: 14px; 
+  }
+   
+}
+
+
+
+/* END OF ABOUT PAGE*/
+
+
+
+
+/* HERE COMES THE PROJECT PAGE*/
+
+.greeting-container {
+  justify-content: center;
+  display: grid;
+  font-size: xx-large;
+  text-align: center;
+  color: rgb(243, 129, 129); 
+  text-shadow: 1px 1px 1px black;
+}
+
+button {
+  box-shadow: 5px 5px 5px rgb(136, 131, 131);
+  justify-content: center;
+  text-align: center; 
+  /* color: rgb(243, 129, 129);  */
+  text-shadow: 1px 1px 1px black;
+  border-style: ridge;
+  color:rgb(243, 129, 129);
+  background-color: rgb(149, 225, 211);
+  padding: 5px; 
+  cursor: pointer; 
+}
+
+.curriculum-download {
+  justify-content: center;
+  display: flex;
+  text-align: center; 
+}
+
+.curriculum-download:hover {
+  text-decoration: underline;
+  position: relative;
+  color:rgb(243, 129, 129); 
+} 

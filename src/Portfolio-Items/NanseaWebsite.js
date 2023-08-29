@@ -46,7 +46,10 @@ const NanseaWebsite = () => {
           <div onClick={toggleModal} className="overlay">
             <div className="modal-content">
               <div></div>
-              <a href="https://github.com/MarekPolges/Nansea" target="_blank">
+              <a
+                href="https://github.com/MarekPolges/NanseaHomepage"
+                target="_blank"
+              >
                 <motion.img
                   whileHover={{ scale: 1.2 }}
                   src={NanseaScreenshot}
